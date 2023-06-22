@@ -1,0 +1,42 @@
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+#quiz-btn {
+  width: 600px;
+  padding: 10px;
+  margin-left: 400px;
+  color: white;
+  background-color: rgb(129, 129, 129);
+  border: none;
+}
+
+#score-container {
+  width: 450px;
+  padding: 5px;
+  margin-left: 450px;
+}
+
+.mb-10 {
+  margin-bottom: 15px;
+  margin-left: 200px;
+}
+
+.buttonFlex {
+  display: inline-flex;
+  margin-right: 10px;
+  padding-top: 10px;
+  border-color: green;
+}
+
+#result-container {
+  margin-left: 650px;
+}

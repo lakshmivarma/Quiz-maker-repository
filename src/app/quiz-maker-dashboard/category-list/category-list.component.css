@@ -1,0 +1,30 @@
+#appTitle {
+  text-align: center;
+}
+
+.category-content {
+  display: flex;
+}
+
+#categorySelect {
+  width: 500px;
+  padding: 10px;
+  margin-left: 200px;
+}
+
+#difficultySelect {
+  width: 500px;
+  padding: 10px;
+}
+
+#createBtn {
+  padding: 10px;
+  width: 60px;
+}
+
+#createSubmit {
+  width: 500px;
+  margin-left: 500px;
+  padding: 10px;
+  background-color: rgb(122, 121, 121);
+}

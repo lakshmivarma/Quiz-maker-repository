@@ -1,0 +1,35 @@
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+.action_btn {
+  display: inline;
+  border-color: green;
+}
+
+.align-item {
+  display: inline-flex;
+  margin-right: 10px;
+  padding-top: 10px;
+}
+
+.mb-10 {
+  margin-bottom: 15px;
+}
+
+.question-container {
+  margin-left: 200px;
+}
+
+#createSubmit {
+  background-color: rgb(129, 129, 129);
+  width: 500px;
+  padding: 10px;
+  margin-left: 300px;
+  color: white;
+  border: none;
+}

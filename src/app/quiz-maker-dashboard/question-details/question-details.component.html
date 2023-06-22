@@ -1,0 +1,21 @@
+<div class="question-container">
+  <div class="mb-10" *ngFor="let data of questDetails; let i = index">
+    <div>{{ i + 1 }}. {{ data['question'] }}</div>
+
+    <div class="align-item" *ngFor="let label of allQuest[i]">
+      <button
+        type="button"
+        class="action_btn"
+        [ngClass]="{ green: isSubmit[i] === label }"
+        (click)="getAnswer(label, i)"
+      >
+        {{ label }}
+      </button>
+    </div>
+  </div>
+
+  <br />
+  <div *ngIf="count && count === allQuest.length">
+    <button type="submit" id="createSubmit" (click)="onSubmit()">Submit</button>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+<h2 id="result-container">Results</h2>
+
+<div class="mb-10" *ngFor="let data of questDetails; let i = index">
+  <div>{{ i + 1 }}. {{ data['question'] }}</div>
+
+  <div class="buttonFlex" *ngFor="let label of allQuest[i]; let z = index">
+    <button
+      type="button"
+      [ngClass]="{
+        green: isCorrect[i] === label,
+        red: label == submittedData[i] && isCorrect[i] !== label
+      }"
+    >
+      {{ label }}
+    </button>
+  </div>
+</div>
+
+<br />
+
+<div
+  id="score-container"
+  [ngClass]="{
+    green: score == 4 || score == 5,
+    yellow: score == 3 || score == 2,
+    red: score == 1 || score == 0
+  }"
+>
+  You score {{ score }} out of {{ submittedData.length }}
+</div>
+
+<br />
+<button [routerLink]="['/create']" id="quiz-btn">Create a new Quiz</button>

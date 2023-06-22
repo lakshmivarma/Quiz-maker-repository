@@ -1,0 +1,31 @@
+<h3 id="appTitle">QUIZ MAKER</h3>
+
+<div class="category-content">
+  <select
+    id="categorySelect"
+    placeholder="select a category"
+    (change)="selCategory($event)"
+  >
+    <option value="" disabled selected>Select a Category</option>
+    <option *ngFor="let category of categoryList" [value]="category.id">
+      {{ category['name'] }}
+    </option>
+  </select>
+
+  <select id="difficultySelect" (change)="selDifficulty($event)">
+    <option value="" disabled selected>Select difficulty</option>
+    <option *ngFor="let data of difficultyLevels" [value]="data.value">
+      {{ data['name'] }}
+    </option>
+  </select>
+
+  <button
+    id="createBtn"
+    [disabled]="!(selectedDetails['id'] && selectedDetails['key'])"
+    (click)="fetchQuest()"
+  >
+    create
+  </button>
+</div>
+<br />
+<app-question-details [questDetails]="questDetails"></app-question-details>
